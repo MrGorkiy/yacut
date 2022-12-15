@@ -53,4 +53,17 @@ python3 -m pip install --upgrade pip
 ```
 pip install -r requirements.txt
 ```
+
+Выполнить миграции:
+
+```commandline
+flask db upgrade
+```
+
+Запуск проекта:
+
+```commandline
+flask run
+```
+
 Автор: [MrGorkiy](https://github.com/MrGorkiy)
