@@ -10,6 +10,7 @@ ERROR_LEN = 'Длина ссылки не может быть больше 16 с
 PATTERN_SHORT_URL = r'^[A-Za-z0-9_]+$'
 ERROR_SHORT_URL = 'Указано недопустимое имя для короткой ссылки'
 
+
 class YacutForm(FlaskForm):
     original_link = URLField(
         DESCRIPTION_URL,
