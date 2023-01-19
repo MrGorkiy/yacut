@@ -15,9 +15,6 @@ def index_view():
             custom_id = get_unique_short()
         elif URLMap.query.filter_by(short=custom_id).first():
             form.custom_id.errors = [f'Имя {custom_id} уже занято!']
-            # для прохождения тестов, добавил flash, но логично же, что
-            # такое уведомление должно быть у поля ввода?
-            flash(f'Имя {custom_id} уже занято!')
             return render_template('yacut.html', form=form)
         url_map = URLMap(
             original=form.original_link.data,

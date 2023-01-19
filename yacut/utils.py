@@ -1,5 +1,4 @@
 from random import choices
-# https://docs.python.org/3/library/string.html
 from string import ascii_letters, digits
 
 from .models import URLMap
